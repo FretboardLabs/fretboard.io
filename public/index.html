@@ -51,6 +51,7 @@
 			function setImageDims() {
 				var windowAspectRatio = $(window).width() / $(window).height();
 				console.log(windowAspectRatio);
+				console.log(imageAspectRatio);
 				if (windowAspectRatio > imageAspectRatio) {
 					$("#background").css({
 						"width": $(window).width() + "px",
