@@ -17,7 +17,7 @@
 			function setImageDims() {
 				console.log("original imageAspectRatio:");
 				console.log(imageAspectRatio);
-				if (imageAspectRatio == NaN) {
+				if (isNaN(imageAspectRatio)) {
 					console.log("changing imageAspectRatio");
 					imageAspectRatio = $("#background").width() / $("#background").height();
 					console.log(imageAspectRatio);
