@@ -56,6 +56,8 @@
 						"width": $(window).width() + "px",
 						"height": ""
 					}).parent().addClass("dummyClass").removeClass("dummyClass");
+					$("#background").attr("style", "width: " + $(window).width() + "px");
+					console.log("changed width and reset height");
 				} else {
 					$("#background").css({
 						"width": "",
