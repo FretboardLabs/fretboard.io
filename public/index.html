@@ -53,13 +53,13 @@
 				console.log(windowAspectRatio);
 				if (windowAspectRatio > imageAspectRatio) {
 					$("#background").css({
-						"max-width": $(window).width() + "px",
-						"max-height": ""
+						"width": $(window).width() + "px",
+						"height": ""
 					});
 				} else {
 					$("#background").css({
-						"max-width": "",
-						"max-height": $(window).height() + "px"
+						"width": "",
+						"height": $(window).height() + "px"
 					});
 				}
 			}
