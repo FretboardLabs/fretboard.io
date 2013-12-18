@@ -15,32 +15,21 @@
 			// Compare image aspect ratio to window aspect ratio
 			// and set image dimensions appropriately
 			function setImageDims() {
-				console.log("original imageAspectRatio:");
-				console.log(imageAspectRatio);
 				if (isNaN(imageAspectRatio)) {
-					console.log("changing imageAspectRatio");
 					imageAspectRatio = $("#background").width() / $("#background").height();
-					console.log(imageAspectRatio);
-					console.log("---");
-				} else {
-					console.log("imageAspectRatio was not NaN");
 				}
 				var windowAspectRatio = $(window).width() / $(window).height();
-				console.log(windowAspectRatio);
-				console.log(imageAspectRatio);
 				if (windowAspectRatio > imageAspectRatio) {
 					$("#background").css({
 						"width": $(window).width() + "px",
 						"height": ""
 					}).parent().addClass("dummyClass").removeClass("dummyClass");
 					$("#background").attr("style", "width: " + $(window).width() + "px");
-					console.log("changed width and reset height");
 				} else {
 					$("#background").css({
 						"width": "",
 						"height": $(window).height() + "px"
 					}).parent().addClass("dummyClass").removeClass("dummyClass");
-					console.log("changed HEIGHT and reset WIDTH");
 				}
 			}
 
