@@ -4,6 +4,11 @@ body
 	padding: 0px;
 }
 
+a
+{
+	text-decoration: none;
+}
+
 #background
 {
 	position: absolute;
@@ -47,7 +52,7 @@ body
 #details
 {
 	height: 212px;
-	background-color: #989898;
+	background-color: #959595;
 }
 
 #getInTouch
@@ -59,13 +64,15 @@ body
 	text-align: center;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 29pt;
-	color: #989898;
+	color: #959595;
 	padding-top: 3px;
+	cursor: pointer;
 }
 
 #getInTouchImg
 {
 	max-height: 28px;
+	margin-left: 5px;
 }
 
 #otherDeets
