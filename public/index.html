@@ -50,6 +50,7 @@
 			// and set image dimensions appropriately
 			function setImageDims() {
 				var windowAspectRatio = $(window).width() / $(window).height();
+				console.log(windowAspectRatio);
 				if (windowAspectRatio > imageAspectRatio) {
 					$("#background").css({
 						"max-width": $(window).width() + "px",
