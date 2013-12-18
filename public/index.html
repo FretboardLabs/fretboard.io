@@ -15,11 +15,15 @@
 			// Compare image aspect ratio to window aspect ratio
 			// and set image dimensions appropriately
 			function setImageDims() {
+				console.log("original imageAspectRatio:");
+				console.log(imageAspectRatio);
 				if (imageAspectRatio == NaN) {
 					console.log("changing imageAspectRatio");
 					imageAspectRatio = $("#background").width() / $("#background").height();
 					console.log(imageAspectRatio);
 					console.log("---");
+				} else {
+					console.log("imageAspectRatio was not NaN");
 				}
 				var windowAspectRatio = $(window).width() / $(window).height();
 				console.log(windowAspectRatio);
