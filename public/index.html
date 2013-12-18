@@ -3,10 +3,48 @@
 		<meta name="google-site-verification" content="zS12kzd4r8mOa-O2ouZmYZ8jTmKSrxRh8Qz9riDStgs" />
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript">
+			/**************************
+			 * Make sure the image fills the window
+			 * and overflows at most 1 dimension.
+			 *************************/
+
+			// Store original image aspect ratio
+			var imageAspectRatio = NaN;
+			
+			// Compare image aspect ratio to window aspect ratio
+			// and set image dimensions appropriately
+			function setImageDims() {
+				if (imageAspectRatio == NaN) {
+					imageAspectRatio = $("#background").width() / $("#background").height();
+				}
+				var windowAspectRatio = $(window).width() / $(window).height();
+				console.log(windowAspectRatio);
+				console.log(imageAspectRatio);
+				if (windowAspectRatio > imageAspectRatio) {
+					$("#background").css({
+						"width": $(window).width() + "px",
+						"height": ""
+					}).parent().addClass("dummyClass").removeClass("dummyClass");
+					$("#background").attr("style", "width: " + $(window).width() + "px");
+					console.log("changed width and reset height");
+				} else {
+					$("#background").css({
+						"width": "",
+						"height": $(window).height() + "px"
+					}).parent().addClass("dummyClass").removeClass("dummyClass");
+					console.log("changed HEIGHT and reset WIDTH");
+				}
+			}
+
+			$( window ).resize(function() {
+				setImageDims();
+			});
+		</script>
 		<title>Fretboard</title>
 	</head> 
 	<body>
-		<img src="images/background/01.jpg" id="background"></img>
+		<img src="images/background/01.jpg" id="background" onload="setImageDims();"></img>
 		<div id="centerPanel">
 			<div id="logo_tray">
 				<img src="images/logo.png" id="logo"></img>
@@ -37,45 +75,5 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			/**************************
-			 * Make sure the image fills the window
-			 * and overflows at most 1 dimension.
-			 *************************/
-
-			// Store original image aspect ratio
-			var imageAspectRatio = NaN;
-			
-			// Compare image aspect ratio to window aspect ratio
-			// and set image dimensions appropriately
-			function setImageDims() {
-				if (imageAspectRatio == Nan) {
-					imageAspectRatio = $("#background").width() / $("#background").height();
-				}
-				var windowAspectRatio = $(window).width() / $(window).height();
-				console.log(windowAspectRatio);
-				console.log(imageAspectRatio);
-				if (windowAspectRatio > imageAspectRatio) {
-					$("#background").css({
-						"width": $(window).width() + "px",
-						"height": ""
-					}).parent().addClass("dummyClass").removeClass("dummyClass");
-					$("#background").attr("style", "width: " + $(window).width() + "px");
-					console.log("changed width and reset height");
-				} else {
-					$("#background").css({
-						"width": "",
-						"height": $(window).height() + "px"
-					}).parent().addClass("dummyClass").removeClass("dummyClass");
-					console.log("changed HEIGHT and reset WIDTH");
-				}
-			}
-
-			setImageDims();
-
-			$( window ).resize(function() {
-				setImageDims();
-			});
-		</script>
 	</body>
 </html>
