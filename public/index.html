@@ -1,75 +1,44 @@
 <html>
-	<head>
-		<meta name="google-site-verification" content="zS12kzd4r8mOa-O2ouZmYZ8jTmKSrxRh8Qz9riDStgs" />
-		<link rel="stylesheet" type="text/css" href="css/css.css">
-		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-		<script type="text/javascript">
-			/**************************
-			 * Make sure the image fills the window
-			 * and overflows at most 1 dimension.
-			 *************************/
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <title>Fretboard</title>
+  </head> 
+  <body>
 
-			// Store original image aspect ratio
-			var imageAspectRatio = NaN;
-			
-			// Compare image aspect ratio to window aspect ratio
-			// and set image dimensions appropriately
-			function setImageDims() {
-				if (isNaN(imageAspectRatio)) {
-					imageAspectRatio = $("#background").width() / $("#background").height();
-				}
-				var windowAspectRatio = $(window).width() / $(window).height();
-				if (windowAspectRatio > imageAspectRatio) {
-					$("#background").css({
-						"width": $(window).width() + "px",
-						"height": ""
-					}).parent().addClass("dummyClass").removeClass("dummyClass");
-					$("#background").attr("style", "width: " + $(window).width() + "px");
-				} else {
-					$("#background").css({
-						"width": "",
-						"height": $(window).height() + "px"
-					}).parent().addClass("dummyClass").removeClass("dummyClass");
-				}
-			}
+    <div id="centerPanel">
+      <div id="logo_tray">
+        <img src="images/logo.png" id="logo"></img>
+      </div>
 
-			$( window ).resize(function() {
-				setImageDims();
-			});
-		</script>
-		<title>Fretboard</title>
-	</head> 
-	<body>
-		<img src="images/background/01.jpg" id="background" onload="setImageDims();"></img>
-		<div id="centerPanel">
-			<div id="logo_tray">
-				<img src="images/logo.png" id="logo"></img>
-			</div>
-			<div id="details">
-				<a href="mailto:jp@fretboard.io"><div id="getInTouch">
-					GET IN TOUCH <img src="images/get_in_touch.png" id="getInTouchImg"></img>
-				</div></a>
-				<div id="otherDeets">
-					<table cellpadding="3">
-						<tr>
-							<td>
-								<img src="images/icon_location.png" id="locationImg"></img>
-							</td>
-							<td>
-								<b>SAN FRANCISCO, USA</b>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img src="images/icon_check.png" id="checkImg"></img>
-							</td>
-							<td>
-								<b>AVAILABLE FOR NEW PROJECTS</b>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</body>
+      <div id="details">
+        <div id="getInTouch">
+          <a href="mailto:hi@fretboard.io">
+            GET IN TOUCH
+            <img src="images/get_in_touch.png" />
+          </a>
+        </div>
+
+        <div id="otherDeets">
+          <div class="row">
+            <div class="row-inner">
+              <div class="row-image-container">
+                <img src="images/icon_location.png"/>
+              </div>
+              <span>SAN FRANCISCO, USA</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-inner">
+              <div class="row-image-container">
+                <img src="images/icon_check.png"/>
+              </div>
+              <span>AVAILABLE FOR NEW PROJECTS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
 </html>
