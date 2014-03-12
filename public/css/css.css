@@ -84,7 +84,7 @@ h1 {
 #getInTouch a {
   vertical-align: middle;
   padding-right: 75px;
-  background-image: url('../images/get_in_touch.png');
+  background-image: url('../images/icons/get_in_touch.png');
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
@@ -106,15 +106,15 @@ h1 {
 }
 
 #location {
-  background-image: url('../images/icon_location.png');
+  background-image: url('../images/icons/icon_location.png');
 }
 
 #availability {
-  background-image: url('../images/icon_check.png');
+  background-image: url('../images/icons/icon_check.png');
 }
 
 #home {
-  background-image: url('../images/icon_home.png');
+  background-image: url('../images/icons/icon_home.png');
 }
 
 .row img {
