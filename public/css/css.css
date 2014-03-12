@@ -57,6 +57,13 @@ h1 {
 .left {
     float: left;
 }
+#right_outer_column {
+    text-align: center;
+}
+#right_inner_column {
+    width: 80%;
+    margin: 0 auto;
+}
 #getInTouch {
     background-color: #eee;
     font-size: 32pt;
@@ -71,14 +78,14 @@ h1 {
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
-.row {
+.info .row {
     width: 100%;
     text-align: left;
     font-size: 12pt;
     color: #666666;
     height: 40px;
 }
-.row a {
+.info .row a {
     padding-left: 32px;
     background-position: 0% 00%;
     background-repeat: no-repeat;
@@ -99,6 +106,11 @@ h1 {
     max-height: 100%;
     max-width: 100%;
     margin-top: -3px;
+}
+.faces img {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
 }
 @media (max-width: 680px) {
     body {
