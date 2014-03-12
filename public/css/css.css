@@ -57,12 +57,18 @@ h1 {
 .left {
     float: left;
 }
+.clears {
+    clear: both;
+}
+#left_outer_column {
+    text-align: justify;
+}
 #right_outer_column {
     text-align: center;
 }
 #right_inner_column {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 #getInTouch {
     background-color: #eee;
@@ -107,10 +113,23 @@ h1 {
     max-width: 100%;
     margin-top: -3px;
 }
-.faces img {
+.faces {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.faces .person {
+    margin: 8px;
+    display: inline-block;
+}
+.faces .person img {
     width: 100px;
     height: 100px;
-    margin: 8px;
+}
+.faces .person span {
+    display: block;
+    font-weight: normal;
+    font-size: 60%;
 }
 @media (max-width: 680px) {
     body {
