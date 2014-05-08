@@ -158,4 +158,13 @@ h1 {
     .column p {
         font-size: 10pt;
     }
+    #left_outer_column {
+        text-align: left;
+    }
+    .info .row, .info .row a {
+        height: 60px;
+    }
+    #getInTouch {
+        font-size: 24pt;
+    }
 }
