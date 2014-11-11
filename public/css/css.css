@@ -63,4 +63,7 @@ a {
     .half p {
 	margin-bottom: 6px;
     }
+    #content {
+	top: 10%;
+    }
 }
