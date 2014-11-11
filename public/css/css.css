@@ -13,6 +13,11 @@ body {
     font-family:"Open Sans", Gadget, sans-serif;
     font-weight: 400;
 }
+img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -23,24 +28,39 @@ a {
     position: relative;
     top: 20%;
 }
-#logo {
-    padding: 0 10px;
-    margin-bottom: 60px;
+#columns {
+    width: 75%;
+    margin: 60px auto 0 auto;
 }
-#get-in-touch a {
-    color: #333;
-    font-size: 16pt;
+#logo {
+    padding: 0 16px;
+}
+#get-in-touch {
+    color: #000;
     border-bottom: 1px solid #666;
+    display: inline;
+}
+.half {
+    width: 50%;
+    text-align: center;
+    float: left;
+    vertical-align: top;
+}
+.half p {
+    color: #333;
+    margin: 0;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
     body {
         overflow: auto;
         --webkit-text-size-adjust: none;
     }
-    img {
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+    .half {
+	width: 100%;
+	clear: both;
+    }
+    .half p {
+	margin-bottom: 6px;
     }
 }
