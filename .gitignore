@@ -18,3 +18,7 @@ tmp
 _yardoc
 doc/
 .elasticbeanstalk/
+
+# sass
+.sass-cache/
+*.map
