@@ -120,6 +120,11 @@ a {
     }
     #logo {
 	left: $side-margin-small-screen;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-repeat: no-repeat;
     }
     #nudge {
 	margin: 0 $side-margin-small-screen;

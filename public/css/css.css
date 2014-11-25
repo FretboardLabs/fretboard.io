@@ -97,7 +97,12 @@ a {
     --webkit-text-size-adjust: none; }
 
   #logo {
-    left: 8%; }
+    left: 8%;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-repeat: no-repeat; }
 
   #nudge {
     margin: 0 8%; }
