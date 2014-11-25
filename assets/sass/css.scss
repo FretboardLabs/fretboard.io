@@ -2,7 +2,7 @@
 $fret-blue: #0094e6;
 $fret-red: #ba2222;
 $fret-yellow: #ffc800;
-$side-margin: 15%;
+$side-margin: 18%;
 $top-banner-height: 104px;
 
 html {
@@ -90,7 +90,11 @@ a {
 	display: inline-block;
 	margin: 0;
 	padding: 0 4px;
-	
+
+	a {
+	    padding: 0;
+	    background-color: transparent;
+	}
 	img {
 	    width: 112px;
 	    height: 112px;

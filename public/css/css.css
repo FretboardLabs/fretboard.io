@@ -32,12 +32,12 @@ a {
   height: 64px;
   background-image: url(../images/logo.png);
   position: relative;
-  left: 15%;
+  left: 18%;
   top: 20px; }
 
 #location {
   float: right;
-  margin: 28px 15%; }
+  margin: 28px 18%; }
   #location p {
     font-size: 14pt;
     font-weight: 300;
@@ -51,7 +51,7 @@ a {
   background-image: url(../images/nudge.png);
   background-position: 60px 0;
   background-repeat: no-repeat;
-  margin: 0 15%;
+  margin: 0 18%;
   top: 104px;
   position: relative;
   height: 24px; }
@@ -60,7 +60,7 @@ a {
   margin-top: 2em; }
 
 .content-item {
-  margin: 0 15% 24px 15%;
+  margin: 0 18% 24px 18%;
   font-weight: 600; }
   .content-item h1 {
     font-size: 28pt;
@@ -76,6 +76,9 @@ a {
     display: inline-block;
     margin: 0;
     padding: 0 4px; }
+    .content-item li a {
+      padding: 0;
+      background-color: transparent; }
     .content-item li img {
       width: 112px;
       height: 112px; }
