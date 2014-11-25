@@ -5,6 +5,8 @@ $fret-yellow: #ffc800;
 $side-margin: 18%;
 $top-banner-height: 104px;
 
+$side-margin-small-screen: 8%;
+
 html {
     margin: 0px;
     padding: 0px;
@@ -109,4 +111,43 @@ a {
 }
 .red {
     color: $fret-red;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow: auto;
+        --webkit-text-size-adjust: none;
+    }
+    #logo {
+	left: $side-margin-small-screen;
+    }
+    /* #logo {
+	position: static;
+	margin: 20px auto 0 auto;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    } */
+    #nudge {
+	margin: 0 $side-margin-small-screen;
+	/* background-position: center 0; */
+    }
+    #location {
+	margin: 34px $side-margin-small-screen;
+	p {
+	    font-size: 11pt;
+	}
+	#elsewhere {
+	    font-size: 7pt;
+	}
+    }
+    .content-item {
+	margin: 0 $side-margin-small-screen 24px $side-margin-small-screen;
+    }
+}
+
+@media (max-width: 540px) {
+    #location {
+	display: none;
+    }
 }

@@ -91,4 +91,36 @@ a {
 .red {
   color: #ba2222; }
 
+@media (max-width: 700px) {
+  body {
+    overflow: auto;
+    --webkit-text-size-adjust: none; }
+
+  #logo {
+    left: 8%; }
+
+    /* #logo {
+	position: static;
+	margin: 20px auto 0 auto;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    } */
+  #nudge {
+    margin: 0 8%;
+    /* background-position: center 0; */ }
+
+  #location {
+    margin: 34px 8%; }
+    #location p {
+      font-size: 11pt; }
+    #location #elsewhere {
+      font-size: 7pt; }
+
+  .content-item {
+    margin: 0 8% 24px 8%; } }
+@media (max-width: 540px) {
+  #location {
+    display: none; } }
+
 /*# sourceMappingURL=css.css.map */
