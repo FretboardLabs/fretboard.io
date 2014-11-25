@@ -1,0 +1,108 @@
+
+$fret-blue: #0094e6;
+$fret-red: #ba2222;
+$fret-yellow: #ffc800;
+$side-margin: 15%;
+$top-banner-height: 104px;
+
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0px;
+    font-family:"Open Sans", Gadget, sans-serif;
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    background-color: $fret-yellow;
+    padding: 4px;
+}
+#top {
+    width: 100%;
+    background-color: $fret-blue;
+    color: #FFFFFF;
+    height: $top-banner-height;;
+}
+#logo {
+    float: left;
+    width: 323px;
+    height: 64px;
+    background-image: url(../images/logo.png);
+    position: relative;
+    left: $side-margin;
+    top: 20px;
+}
+#location {
+    float: right;
+    margin: 28px $side-margin;
+
+    p {
+	font-size: 14pt;
+	font-weight: 300;
+	margin: 0;
+    }
+    #elsewhere {
+	text-transform: uppercase;
+	font-size: 8.5pt;
+	text-align: right;
+    }
+}
+#nudge {
+    background-image: url(../images/nudge.png);
+    background-position: 60px 0;
+    background-repeat: no-repeat;
+    margin: 0 $side-margin;
+    top: $top-banner-height;
+    position: relative;
+    height: 24px;
+}
+#summary {
+    margin-top: 2em;
+}
+.content-item {
+    margin: 0 $side-margin 24px $side-margin;
+    font-weight: 600;
+    
+    h1 {
+	font-size: 28pt;
+	margin: 0 0 4px 0;
+    }
+    p {
+	font-size: 14pt;
+	margin: 4px 0;
+    }
+    ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    }
+    li {
+	display: inline-block;
+	margin: 0;
+	padding: 0 4px;
+	
+	img {
+	    width: 112px;
+	    height: 112px;
+	}
+	p {
+	    text-align: center;
+	}
+    }
+}
+.blue {
+    color: $fret-blue;
+}
+.red {
+    color: $fret-red;
+}
