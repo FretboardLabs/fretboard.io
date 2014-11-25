@@ -14,7 +14,7 @@ html {
 }
 body {
     margin: 0;
-    padding: 0px;
+    padding: 0 0 16px 0;
     font-family:"Open Sans", Gadget, sans-serif;
     font-weight: 400;
 }
@@ -113,7 +113,7 @@ a {
     color: $fret-red;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
     body {
         overflow: auto;
         --webkit-text-size-adjust: none;
@@ -141,5 +141,13 @@ a {
 @media (max-width: 540px) {
     #location {
 	display: none;
+    }
+    .content-item {
+	h1 {
+	    font-size: 22pt;
+	}
+	p {
+	    font-size: 12pt;
+	}
     }
 }
