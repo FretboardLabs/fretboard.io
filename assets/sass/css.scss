@@ -69,10 +69,11 @@ a {
     height: 24px;
 }
 #summary {
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 .content-item {
-    margin: 0 $side-margin 24px $side-margin;
+    margin: 2em $side-margin 24px $side-margin;
     font-weight: 600;
     
     h1 {
