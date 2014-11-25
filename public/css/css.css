@@ -99,16 +99,8 @@ a {
   #logo {
     left: 8%; }
 
-    /* #logo {
-	position: static;
-	margin: 20px auto 0 auto;
-	width: 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-    } */
   #nudge {
-    margin: 0 8%;
-    /* background-position: center 0; */ }
+    margin: 0 8%; }
 
   #location {
     margin: 34px 8%; }
