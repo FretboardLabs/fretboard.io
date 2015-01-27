@@ -76,6 +76,8 @@ a {
     margin: 4px 0; }
   .content-item ul {
     list-style-type: circle; }
+  .content-item li {
+    font-size: 14pt; }
   .content-item ul#faces {
     list-style-type: none;
     margin: 0;
