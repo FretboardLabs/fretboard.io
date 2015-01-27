@@ -32,12 +32,12 @@ a {
   height: 64px;
   background-image: url(../images/logo.png);
   position: relative;
-  left: 18%;
+  left: 16%;
   top: 20px; }
 
 #location {
   float: right;
-  margin: 28px 18%; }
+  margin: 28px 16%; }
   #location p {
     font-size: 14pt;
     font-weight: 300;
@@ -51,20 +51,27 @@ a {
   background-image: url(../images/nudge.png);
   background-position: 60px 0;
   background-repeat: no-repeat;
-  margin: 0 18%;
+  margin: 0 16%;
   top: 104px;
   position: relative;
   height: 24px; }
 
-#summary {
-  margin-top: 3em;
-  margin-bottom: 3em; }
+.left {
+  float: left; }
+
+.half {
+  width: 50%; }
+
+#contents {
+  margin: 3em 16% 0 16%; }
 
 .content-item {
-  margin: 2em 18% 24px 18%;
+  margin: 1em 0 24px 0;
+  display: inline-block;
+  clear: none;
   font-weight: 600; }
   .content-item h1 {
-    font-size: 28pt;
+    font-size: 24pt;
     margin: 0 0 4px 0; }
   .content-item p {
     font-size: 14pt;
@@ -92,7 +99,7 @@ a {
 .red {
   color: #ba2222; }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   body {
     overflow: auto;
     --webkit-text-size-adjust: none; }
@@ -115,8 +122,12 @@ a {
     #location #elsewhere {
       font-size: 7pt; }
 
-  .content-item {
-    margin: 0 8% 24px 8%; } }
+  .half {
+    width: 100%; }
+
+  #contents {
+    margin-left: 8%;
+    margin-right: 8%; } }
 @media (max-width: 540px) {
   #logo {
     width: 242px;

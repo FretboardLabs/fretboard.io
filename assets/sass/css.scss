@@ -2,7 +2,7 @@
 $fret-blue: #0094e6;
 $fret-red: #ba2222;
 $fret-yellow: #ffc800;
-$side-margin: 18%;
+$side-margin: 16%;
 $top-banner-height: 104px;
 
 $side-margin-small-screen: 8%;
@@ -68,16 +68,23 @@ a {
     position: relative;
     height: 24px;
 }
-#summary {
-    margin-top: 3em;
-    margin-bottom: 3em;
+.left {
+    float: left;
+}
+.half {
+    width: 50%;
+}
+#contents {
+    margin: 3em $side-margin 0 $side-margin;
 }
 .content-item {
-    margin: 2em $side-margin 24px $side-margin;
+    margin: 1em 0 24px 0;
+    display: inline-block;
+    clear: none;
     font-weight: 600;
     
     h1 {
-	font-size: 28pt;
+	font-size: 24pt;
 	margin: 0 0 4px 0;
     }
     p {
@@ -114,7 +121,7 @@ a {
     color: $fret-red;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     body {
         overflow: auto;
         --webkit-text-size-adjust: none;
@@ -139,8 +146,12 @@ a {
 	    font-size: 7pt;
 	}
     }
-    .content-item {
-	margin: 0 $side-margin-small-screen 24px $side-margin-small-screen;
+    .half {
+	width: 100%;
+    }
+    #contents {
+	margin-left: $side-margin-small-screen;
+	margin-right: $side-margin-small-screen;
     }
 }
 
