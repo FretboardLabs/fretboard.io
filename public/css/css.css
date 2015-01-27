@@ -32,12 +32,12 @@ a {
   height: 64px;
   background-image: url(../images/logo.png);
   position: relative;
-  left: 16%;
+  left: 12%;
   top: 20px; }
 
 #location {
   float: right;
-  margin: 28px 16%; }
+  margin: 28px 12%; }
   #location p {
     font-size: 14pt;
     font-weight: 300;
@@ -51,19 +51,17 @@ a {
   background-image: url(../images/nudge.png);
   background-position: 60px 0;
   background-repeat: no-repeat;
-  margin: 0 16%;
+  margin: 0 12%;
   top: 104px;
   position: relative;
   height: 24px; }
 
-.left {
+.half {
+  width: 50%;
   float: left; }
 
-.half {
-  width: 50%; }
-
 #contents {
-  margin: 3em 16% 0 16%; }
+  margin: 3em 12% 0 12%; }
 
 .content-item {
   margin: 1em 0 24px 0;
@@ -77,21 +75,26 @@ a {
     font-size: 14pt;
     margin: 4px 0; }
   .content-item ul {
+    list-style-type: circle; }
+  .content-item ul#faces {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .content-item li {
-    display: inline-block;
-    margin: 0;
-    padding: 0 4px; }
-    .content-item li a {
-      padding: 0;
-      background-color: transparent; }
-    .content-item li img {
-      width: 112px;
-      height: 112px; }
-    .content-item li p {
-      text-align: center; }
+    .content-item ul#faces li {
+      display: inline-block;
+      margin: 0;
+      padding: 0 4px; }
+      .content-item ul#faces li a {
+        padding: 0;
+        background-color: transparent; }
+      .content-item ul#faces li img {
+        width: 96px;
+        height: 96px; }
+      .content-item ul#faces li p {
+        text-align: center; }
+
+.left {
+  padding-right: 2em; }
 
 .blue {
   color: #0094e6; }
@@ -127,7 +130,10 @@ a {
 
   #contents {
     margin-left: 8%;
-    margin-right: 8%; } }
+    margin-right: 8%; }
+
+  .content-item {
+    padding: 0; } }
 @media (max-width: 540px) {
   #logo {
     width: 242px;
