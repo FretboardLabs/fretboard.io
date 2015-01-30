@@ -75,6 +75,9 @@ a {
 #contents {
     margin: 3em $side-margin 0 $side-margin;
 }
+#summary {
+    width: 100%;
+}
 .content-item {
     margin: 1em 0 24px 0;
     display: inline-block;
@@ -91,9 +94,11 @@ a {
     }
     ul {
 	list-style-type: circle;
+	margin-top: 0.5em;
     }
     li {
 	font-size: 14pt;
+	margin-bottom: 0.5em;
     }
     ul#faces {
 	list-style-type: none;
