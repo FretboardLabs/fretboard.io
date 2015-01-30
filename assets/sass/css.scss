@@ -78,15 +78,17 @@ a {
 #summary {
     width: 100%;
 }
-.content-item {
-    margin: 1em 0 24px 0;
+.item {
+    margin: 0 0 2em 0;
     display: inline-block;
     clear: none;
     font-weight: 600;
-    
+}
+.content-item {
     h1 {
 	font-size: 24pt;
 	margin: 0 0 4px 0;
+	color: #333333;
     }
     p {
 	font-size: 14pt;
@@ -100,22 +102,41 @@ a {
 	font-size: 14pt;
 	margin-bottom: 0.5em;
     }
+}
+.secondary-item {
+    background-color: #DDDDDD;
+    padding: 1.5em 1.5em 0.25em 1.5em;
+    border-bottom: 0.5em solid #999999;
+    .caption {
+	text-align: right;
+    }
+    p {
+	font-size: 12pt;
+	font-weight: 400;
+	color: #000000;
+	margin: 0.5em 0;
+    }
     ul#faces {
 	list-style-type: none;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	li {
 	    display: inline-block;
 	    margin: 0;
-	    padding: 0 4px;
+	    padding: 8px;
 	    
 	    a {
 		padding: 0;
 		background-color: transparent;
 	    }
 	    img {
-		width: 96px;
-		height: 96px;
+		width: 112px;
+		height: 112px;
+		opacity: 0.75;
+	    }
+	    img:hover {
+		opacity: 1;
 	    }
 	    p {
 		text-align: center;
@@ -126,10 +147,10 @@ a {
 .left {
     padding-right: 2em;
 }
-.blue {
+.blue, .blue h1 {
     color: $fret-blue;
 }
-.red {
+.red, .red h1 {
     color: $fret-red;
 }
 
@@ -168,6 +189,11 @@ a {
     .content-item {
 	padding: 0;
     }
+    .secondary-item {
+	ul#faces {
+	    text-align: left;
+	}
+    }
 }
 
 @media (max-width: 540px) {
@@ -184,7 +210,10 @@ a {
     }
     .content-item {
 	h1 {
-	    font-size: 22pt;
+	    font-size: 20pt;
+	}
+	li {
+	    font-size: 12pt;
 	}
 	p {
 	    font-size: 12pt;

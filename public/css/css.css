@@ -66,47 +66,65 @@ a {
 #summary {
   width: 100%; }
 
-.content-item {
-  margin: 1em 0 24px 0;
+.item {
+  margin: 0 0 2em 0;
   display: inline-block;
   clear: none;
   font-weight: 600; }
-  .content-item h1 {
-    font-size: 24pt;
-    margin: 0 0 4px 0; }
-  .content-item p {
-    font-size: 14pt;
-    margin: 4px 0; }
-  .content-item ul {
-    list-style-type: circle;
-    margin-top: 0.5em; }
-  .content-item li {
-    font-size: 14pt;
-    margin-bottom: 0.5em; }
-  .content-item ul#faces {
+
+.content-item h1 {
+  font-size: 24pt;
+  margin: 0 0 4px 0;
+  color: #333333; }
+.content-item p {
+  font-size: 14pt;
+  margin: 4px 0; }
+.content-item ul {
+  list-style-type: circle;
+  margin-top: 0.5em; }
+.content-item li {
+  font-size: 14pt;
+  margin-bottom: 0.5em; }
+
+.secondary-item {
+  background-color: #DDDDDD;
+  padding: 1.5em 1.5em 0.25em 1.5em;
+  border-bottom: 0.5em solid #999999; }
+  .secondary-item .caption {
+    text-align: right; }
+  .secondary-item p {
+    font-size: 12pt;
+    font-weight: 400;
+    color: #000000;
+    margin: 0.5em 0; }
+  .secondary-item ul#faces {
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0; }
-    .content-item ul#faces li {
+    .secondary-item ul#faces li {
       display: inline-block;
       margin: 0;
-      padding: 0 4px; }
-      .content-item ul#faces li a {
+      padding: 8px; }
+      .secondary-item ul#faces li a {
         padding: 0;
         background-color: transparent; }
-      .content-item ul#faces li img {
-        width: 96px;
-        height: 96px; }
-      .content-item ul#faces li p {
+      .secondary-item ul#faces li img {
+        width: 112px;
+        height: 112px;
+        opacity: 0.75; }
+      .secondary-item ul#faces li img:hover {
+        opacity: 1; }
+      .secondary-item ul#faces li p {
         text-align: center; }
 
 .left {
   padding-right: 2em; }
 
-.blue {
+.blue, .blue h1 {
   color: #0094e6; }
 
-.red {
+.red, .red h1 {
   color: #ba2222; }
 
 @media (max-width: 800px) {
@@ -140,7 +158,10 @@ a {
     margin-right: 8%; }
 
   .content-item {
-    padding: 0; } }
+    padding: 0; }
+
+  .secondary-item ul#faces {
+    text-align: left; } }
 @media (max-width: 540px) {
   #logo {
     width: 242px;
@@ -154,7 +175,9 @@ a {
     display: none; }
 
   .content-item h1 {
-    font-size: 22pt; }
+    font-size: 20pt; }
+  .content-item li {
+    font-size: 12pt; }
   .content-item p {
     font-size: 12pt; } }
 
