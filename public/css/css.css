@@ -57,6 +57,14 @@ a {
   height: 100%;
   top: 0; }
 
+#btn-contact {
+  background-image: url(../images/contact-button.png);
+  background-size: 177px 48px;
+  width: 177px;
+  height: 48px;
+  display: inline-block;
+  margin: 0 0 1em 0; }
+
 .full {
   display: inline-block;
   width: 100%;
