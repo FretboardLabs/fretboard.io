@@ -26,6 +26,8 @@ a {
     text-decoration: none;
 }
 #top {
+    position: fixed;
+    top: 0;
     width: 100%;
     height: $top-banner-height;
 }
@@ -55,14 +57,21 @@ a {
 }
 #contents {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 40%;
-    height: 40%;
+}
+.full {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.small-center {
     text-align: center;
+    width: 50%;
+    max-width: 400px;
+    margin: 20% auto;
     color: #FFFFFF;
     h1 {
 	font-size: 20pt;
@@ -74,6 +83,7 @@ a {
     h2 {
 	font-size: 16pt;
 	font-weight: 300;
+	letter-spacing: 1px;
 	margin: 0;
 	text-transform: uppercase;
     }
