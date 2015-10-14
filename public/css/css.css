@@ -20,6 +20,7 @@ a {
 
 #top {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   height: 104px; }
@@ -48,7 +49,7 @@ a {
     font-size: 11pt; }
 
 #contents {
-  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
   top: 0; }
