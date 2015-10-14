@@ -7,7 +7,8 @@ body {
   margin: 0;
   padding: 0 0 16px 0;
   font-family: "Open Sans", Gadget, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #1e5a8d; }
 
 img {
   max-width: 100%;
@@ -15,118 +16,68 @@ img {
   margin-right: 0; }
 
 a {
-  text-decoration: none;
-  color: #000;
-  background-color: #ffc800;
-  padding: 4px; }
+  text-decoration: none; }
 
 #top {
   width: 100%;
-  background-color: #0094e6;
-  color: #FFFFFF;
   height: 104px; }
 
 #logo {
   float: left;
-  width: 323px;
-  height: 64px;
+  width: 226px;
+  height: 45px;
   background-image: url(../images/logo.png);
-  background-size: 323px 64px;
+  background-size: 226px 45px;
   position: relative;
-  left: 12%;
+  left: 4%;
   top: 20px; }
 
-#location {
+#nav {
   float: right;
-  margin: 28px 12%; }
-  #location p {
-    font-size: 14pt;
-    font-weight: 300;
-    margin: 0; }
-  #location #elsewhere {
+  margin: 0 4% 0 0; }
+  #nav a {
+    color: #FFFFFF;
+    padding: 24px 8px;
+    display: inline-block;
+    height: 32px;
     text-transform: uppercase;
-    font-size: 8.5pt;
-    text-align: right; }
-
-#nudge {
-  background-image: url(../images/nudge.png);
-  background-position: 60px 0;
-  background-repeat: no-repeat;
-  margin: 0 12%;
-  top: 104px;
-  position: relative;
-  height: 24px; }
-
-.half {
-  width: 50%;
-  float: left; }
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 11pt; }
 
 #contents {
-  margin: 3em 12% 0 12%; }
-
-#summary {
-  width: 100%; }
-
-.item {
-  margin: 0 0 2em 0;
-  display: inline-block;
-  clear: none;
-  font-weight: 600; }
-
-.content-item h1 {
-  font-size: 24pt;
-  margin: 0 0 4px 0;
-  color: #333333; }
-.content-item p {
-  font-size: 14pt;
-  margin: 4px 0;
-  color: #000000; }
-.content-item ul {
-  list-style-type: circle;
-  margin-top: 0.5em; }
-.content-item li {
-  font-size: 14pt;
-  margin-bottom: 0.5em; }
-
-.supporting-item p {
-  font-size: 12pt;
-  font-weight: 400;
-  color: #000000;
-  line-height: 1.5em;
-  margin: 0.5em 0 2em 0; }
-.supporting-item .caption {
-  text-align: right; }
-  .supporting-item .caption p {
-    color: #999999; }
-.supporting-item ul#faces {
-  list-style-type: none;
-  text-align: right;
-  margin: 0;
-  padding: 0; }
-  .supporting-item ul#faces li {
-    display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  color: #FFFFFF; }
+  #contents h1 {
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin: 0;
-    padding: 8px; }
-    .supporting-item ul#faces li a {
-      padding: 0;
-      background-color: transparent; }
-    .supporting-item ul#faces li img {
-      width: 112px;
-      height: 112px;
-      opacity: 0.75; }
-    .supporting-item ul#faces li img:hover {
-      opacity: 1; }
-    .supporting-item ul#faces li p {
-      text-align: center; }
+    text-transform: uppercase; }
+  #contents h2 {
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase; }
 
-.left {
-  padding-right: 2em; }
+.sep {
+  background-color: #FFFFFF;
+  display: block;
+  height: 1px;
+  width: 200px;
+  margin: 12px auto; }
 
-.blue, .blue h1 {
-  color: #0094e6; }
-
-.red, .red h1, .red p {
-  color: #ba2222; }
+.narrow {
+  margin: 0 auto;
+  font-size: 12pt; }
 
 @media (max-width: 800px) {
   body {
@@ -141,45 +92,13 @@ a {
     -o-background-size: contain;
     background-repeat: no-repeat; }
 
-  #nudge {
-    margin: 0 8%; }
-
-  #location {
-    margin: 34px 8%; }
-    #location p {
-      font-size: 11pt; }
-    #location #elsewhere {
-      font-size: 7pt; }
-
-  .half {
-    width: 100%; }
-
   #contents {
     margin-left: 8%;
-    margin-right: 8%; }
-
-  .content-item {
-    padding: 0; }
-
-  .supporting-item ul#faces {
-    text-align: left; } }
+    margin-right: 8%; } }
 @media (max-width: 540px) {
   #logo {
     width: 242px;
     height: 48px;
-    top: 26px; }
-
-  #nudge {
-    background-position: 38px 0; }
-
-  #location {
-    display: none; }
-
-  .content-item h1 {
-    font-size: 20pt; }
-  .content-item li {
-    font-size: 12pt; }
-  .content-item p {
-    font-size: 12pt; } }
+    top: 26px; } }
 
 /*# sourceMappingURL=css.css.map */
