@@ -3,7 +3,7 @@ $fret-blue: #1e5a8d;
 $side-margin: 4%;
 $top-banner-height: 104px;
 
-$side-margin-small-screen: 8%;
+$side-margin-small-screen: 2%;
 
 html {
     margin: 0px;
@@ -89,7 +89,7 @@ ul.portfolio li {
     height: 300px;
     background-image: url(../images/device-blueprint.png);
     background-size: 143px 300px;
-    margin: 0 0.5em 1em 0;
+    margin: 0 0.5em 1em 0.5em;
 }
 ul.portfolio li a {
     display: inline-block;
@@ -137,7 +137,7 @@ ul.portfolio li a {
     margin: 12px auto;
 }
 .narrow {
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     font-size: 12pt;
 }
 
@@ -146,24 +146,48 @@ ul.portfolio li a {
         overflow: auto;
         --webkit-text-size-adjust: none;
     }
+    #top {
+	background-color: $fret-blue;
+    }
     #logo {
-	left: $side-margin-small-screen;
+	width: 100%;
+	margin: 8px 0;
+	left: 0;
+	top: 6px;
+	background-position: center;
 	background-size: contain;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
 	background-repeat: no-repeat;
     }
-    #contents {
-	margin-left: $side-margin-small-screen;
-	margin-right: $side-margin-small-screen;
+    #nav {
+	float: none;
+	width: fit-content;
+	margin: 0 auto;
+	a {
+	    padding-top: 10px;
+	}
     }
-}
-
-@media (max-width: 540px) {
-    #logo {
-	width: 242px;
-	height: 48px;
-	top: 26px;
+    .small-center {
+	width: 90%;
+	h1 {
+	    font-size: 16pt;
+	    font-weight: 400;
+	}
+	h2 {
+	    font-size: 13pt;
+	}
+    }
+    ul.portfolio li {
+	width: 72px;
+	height: 151px;
+	background-size: 72px 151px;
+    }
+    ul.portfolio li a {
+	max-width: 48px;
+    }
+    .narrow {
+	font-size: 10pt;
     }
 }
