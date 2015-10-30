@@ -1,11 +1,9 @@
 
-$fret-blue: #0094e6;
-$fret-red: #ba2222;
-$fret-yellow: #ffc800;
-$side-margin: 12%;
+$fret-blue: #1e5a8d;
+$side-margin: 4%;
 $top-banner-height: 104px;
 
-$side-margin-small-screen: 8%;
+$side-margin-small-screen: 2%;
 
 html {
     margin: 0px;
@@ -17,6 +15,7 @@ body {
     padding: 0 0 16px 0;
     font-family:"Open Sans", Gadget, sans-serif;
     font-weight: 400;
+    background-color: $fret-blue;
 }
 img {
     max-width: 100%;
@@ -25,136 +24,121 @@ img {
 }
 a {
     text-decoration: none;
-    color: #000;
-    background-color: $fret-yellow;
-    padding: 4px;
 }
 #top {
+    position: fixed;
+    z-index: 1;
+    top: 0;
     width: 100%;
-    background-color: $fret-blue;
-    color: #FFFFFF;
-    height: $top-banner-height;;
+    height: $top-banner-height;
 }
 #logo {
     float: left;
-    width: 323px;
-    height: 64px;
+    width: 226px;
+    height: 45px;
     background-image: url(../images/logo.png);
-    background-size: 323px 64px;
+    background-size: 226px 45px;
     position: relative;
     left: $side-margin;
     top: 20px;
 }
-#location {
+#nav {
     float: right;
-    margin: 28px $side-margin;
-
-    p {
-	font-size: 14pt;
-	font-weight: 300;
-	margin: 0;
-    }
-    #elsewhere {
+    margin: 0 $side-margin 0 0;
+    a {
+	color: #FFFFFF;
+	padding: 24px 2px 16px 2px;
+	margin: 0 6px;
+	display: inline-block;
+	height: 16px;
 	text-transform: uppercase;
-	font-size: 8.5pt;
-	text-align: right;
+	letter-spacing: 1.5px;
+	font-weight: 300;
+	font-size: 11pt;
     }
-}
-#nudge {
-    background-image: url(../images/nudge.png);
-    background-position: 60px 0;
-    background-repeat: no-repeat;
-    margin: 0 $side-margin;
-    top: $top-banner-height;
-    position: relative;
-    height: 24px;
-}
-.half {
-    width: 50%;
-    float: left;
+    a.current {
+	border-bottom: 1px solid #FFFFFF;
+    }
 }
 #contents {
-    margin: 3em $side-margin 0 $side-margin;
-}
-#summary {
+    z-index: -1;
     width: 100%;
+    height: 100%;
+    top: 0;
 }
-.item {
-    margin: 0 0 2em 0;
+#btn-contact {
+    background-image: url(../images/contact-button.png);
+    background-size: 177px 48px;
+    width: 177px;
+    height: 48px;
     display: inline-block;
-    clear: none;
-    font-weight: 600;
+    margin: 0 0 1em 0;
 }
-.content-item {
+ul.portfolio {
+    margin: 0 auto 1em auto;
+    padding: 0;
+    display: block;
+    width: fit-content;
+}
+ul.portfolio li {
+    display: flex;
+    float: left;
+    justify-content: center;
+    list-style-type: none;
+    width: 143px;
+    height: 300px;
+    background-image: url(../images/device-blueprint.png);
+    background-size: 143px 300px;
+    margin: 0 0.5em 1em 0.5em;
+}
+ul.portfolio li a {
+    display: inline-block;
+    align-self: center;
+    max-width: 64px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 11pt;
+    color: #FFFFFF;
+}
+.full {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.small-center {
+    align-self: center;
+    text-align: center;
+    width: 60%;
+    max-width: 600px;
+    color: #FFFFFF;
     h1 {
-	font-size: 24pt;
-	margin: 0 0 4px 0;
-	color: #333333;
-    }
-    p {
-	font-size: 14pt;
-	margin: 4px 0;
-	color: #000000;
-    }
-    ul {
-	list-style-type: circle;
-	margin-top: 0.5em;
-    }
-    li {
-	font-size: 14pt;
-	margin-bottom: 0.5em;
-    }
-}
-.supporting-item {
-    p {
-	font-size: 12pt;
-	font-weight: 400;
-	color: #000000;
-	line-height: 1.5em;
-	margin: 0.5em 0 2em 0;
-    }
-    .caption {
-	text-align: right;
-	p {
-	    color: #999999;
-	}
-    }
-    ul#faces {
-	list-style-type: none;
-	text-align: right;
+	font-size: 20pt;
+	font-weight: 600;
+	letter-spacing: 1px;
 	margin: 0;
-	padding: 0;
-	li {
-	    display: inline-block;
-	    margin: 0;
-	    padding: 8px;
-	    
-	    a {
-		padding: 0;
-		background-color: transparent;
-	    }
-	    img {
-		width: 112px;
-		height: 112px;
-		opacity: 0.75;
-	    }
-	    img:hover {
-		opacity: 1;
-	    }
-	    p {
-		text-align: center;
-	    }
-	}
+	text-transform: uppercase;
+    }
+    h2 {
+	font-size: 16pt;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
     }
 }
-.left {
-    padding-right: 2em;
+.sep {
+    background-color: #FFFFFF;
+    display: block;
+    clear: both;
+    height: 1px;
+    width: 200px;
+    margin: 12px auto;
 }
-.blue, .blue h1 {
-    color: $fret-blue;
-}
-.red, .red h1, .red p {
-    color: $fret-red;
+.narrow {
+    margin: 0 auto 1em auto;
+    font-size: 12pt;
 }
 
 @media (max-width: 800px) {
@@ -162,64 +146,48 @@ a {
         overflow: auto;
         --webkit-text-size-adjust: none;
     }
+    #top {
+	background-color: $fret-blue;
+    }
     #logo {
-	left: $side-margin-small-screen;
+	width: 100%;
+	margin: 8px 0;
+	left: 0;
+	top: 6px;
+	background-position: center;
 	background-size: contain;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
 	background-repeat: no-repeat;
     }
-    #nudge {
-	margin: 0 $side-margin-small-screen;
-    }
-    #location {
-	margin: 34px $side-margin-small-screen;
-	p {
-	    font-size: 11pt;
-	}
-	#elsewhere {
-	    font-size: 7pt;
+    #nav {
+	float: none;
+	width: fit-content;
+	margin: 0 auto;
+	a {
+	    padding-top: 10px;
 	}
     }
-    .half {
-	width: 100%;
-    }
-    #contents {
-	margin-left: $side-margin-small-screen;
-	margin-right: $side-margin-small-screen;
-    }
-    .content-item {
-	padding: 0;
-    }
-    .supporting-item {
-	ul#faces {
-	    text-align: left;
-	}
-    }
-}
-
-@media (max-width: 540px) {
-    #logo {
-	width: 242px;
-	height: 48px;
-	top: 26px;
-    }
-    #nudge {
-	background-position: 38px 0;
-    }
-    #location {
-	display: none;
-    }
-    .content-item {
+    .small-center {
+	width: 90%;
 	h1 {
-	    font-size: 20pt;
+	    font-size: 16pt;
+	    font-weight: 400;
 	}
-	li {
-	    font-size: 12pt;
+	h2 {
+	    font-size: 13pt;
 	}
-	p {
-	    font-size: 12pt;
-	}
+    }
+    ul.portfolio li {
+	width: 72px;
+	height: 151px;
+	background-size: 72px 151px;
+    }
+    ul.portfolio li a {
+	max-width: 48px;
+    }
+    .narrow {
+	font-size: 10pt;
     }
 }

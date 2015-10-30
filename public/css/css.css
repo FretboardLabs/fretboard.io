@@ -7,7 +7,8 @@ body {
   margin: 0;
   padding: 0 0 16px 0;
   font-family: "Open Sans", Gadget, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #1e5a8d; }
 
 img {
   max-width: 100%;
@@ -15,171 +16,163 @@ img {
   margin-right: 0; }
 
 a {
-  text-decoration: none;
-  color: #000;
-  background-color: #ffc800;
-  padding: 4px; }
+  text-decoration: none; }
 
 #top {
+  position: fixed;
+  z-index: 1;
+  top: 0;
   width: 100%;
-  background-color: #0094e6;
-  color: #FFFFFF;
   height: 104px; }
 
 #logo {
   float: left;
-  width: 323px;
-  height: 64px;
+  width: 226px;
+  height: 45px;
   background-image: url(../images/logo.png);
-  background-size: 323px 64px;
+  background-size: 226px 45px;
   position: relative;
-  left: 12%;
+  left: 4%;
   top: 20px; }
 
-#location {
+#nav {
   float: right;
-  margin: 28px 12%; }
-  #location p {
-    font-size: 14pt;
-    font-weight: 300;
-    margin: 0; }
-  #location #elsewhere {
+  margin: 0 4% 0 0; }
+  #nav a {
+    color: #FFFFFF;
+    padding: 24px 2px 16px 2px;
+    margin: 0 6px;
+    display: inline-block;
+    height: 16px;
     text-transform: uppercase;
-    font-size: 8.5pt;
-    text-align: right; }
-
-#nudge {
-  background-image: url(../images/nudge.png);
-  background-position: 60px 0;
-  background-repeat: no-repeat;
-  margin: 0 12%;
-  top: 104px;
-  position: relative;
-  height: 24px; }
-
-.half {
-  width: 50%;
-  float: left; }
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 11pt; }
+  #nav a.current {
+    border-bottom: 1px solid #FFFFFF; }
 
 #contents {
-  margin: 3em 12% 0 12%; }
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0; }
 
-#summary {
-  width: 100%; }
-
-.item {
-  margin: 0 0 2em 0;
+#btn-contact {
+  background-image: url(../images/contact-button.png);
+  background-size: 177px 48px;
+  width: 177px;
+  height: 48px;
   display: inline-block;
-  clear: none;
-  font-weight: 600; }
+  margin: 0 0 1em 0; }
 
-.content-item h1 {
-  font-size: 24pt;
-  margin: 0 0 4px 0;
-  color: #333333; }
-.content-item p {
-  font-size: 14pt;
-  margin: 4px 0;
-  color: #000000; }
-.content-item ul {
-  list-style-type: circle;
-  margin-top: 0.5em; }
-.content-item li {
-  font-size: 14pt;
-  margin-bottom: 0.5em; }
+ul.portfolio {
+  margin: 0 auto 1em auto;
+  padding: 0;
+  display: block;
+  width: fit-content; }
 
-.supporting-item p {
-  font-size: 12pt;
-  font-weight: 400;
-  color: #000000;
-  line-height: 1.5em;
-  margin: 0.5em 0 2em 0; }
-.supporting-item .caption {
-  text-align: right; }
-  .supporting-item .caption p {
-    color: #999999; }
-.supporting-item ul#faces {
+ul.portfolio li {
+  display: flex;
+  float: left;
+  justify-content: center;
   list-style-type: none;
-  text-align: right;
-  margin: 0;
-  padding: 0; }
-  .supporting-item ul#faces li {
-    display: inline-block;
+  width: 143px;
+  height: 300px;
+  background-image: url(../images/device-blueprint.png);
+  background-size: 143px 300px;
+  margin: 0 0.5em 1em 0.5em; }
+
+ul.portfolio li a {
+  display: inline-block;
+  align-self: center;
+  max-width: 64px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 11pt;
+  color: #FFFFFF; }
+
+.full {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.small-center {
+  align-self: center;
+  text-align: center;
+  width: 60%;
+  max-width: 600px;
+  color: #FFFFFF; }
+  .small-center h1 {
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin: 0;
-    padding: 8px; }
-    .supporting-item ul#faces li a {
-      padding: 0;
-      background-color: transparent; }
-    .supporting-item ul#faces li img {
-      width: 112px;
-      height: 112px;
-      opacity: 0.75; }
-    .supporting-item ul#faces li img:hover {
-      opacity: 1; }
-    .supporting-item ul#faces li p {
-      text-align: center; }
+    text-transform: uppercase; }
+  .small-center h2 {
+    font-size: 16pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase; }
 
-.left {
-  padding-right: 2em; }
+.sep {
+  background-color: #FFFFFF;
+  display: block;
+  clear: both;
+  height: 1px;
+  width: 200px;
+  margin: 12px auto; }
 
-.blue, .blue h1 {
-  color: #0094e6; }
-
-.red, .red h1, .red p {
-  color: #ba2222; }
+.narrow {
+  margin: 0 auto 1em auto;
+  font-size: 12pt; }
 
 @media (max-width: 800px) {
   body {
     overflow: auto;
     --webkit-text-size-adjust: none; }
 
+  #top {
+    background-color: #1e5a8d; }
+
   #logo {
-    left: 8%;
+    width: 100%;
+    margin: 8px 0;
+    left: 0;
+    top: 6px;
+    background-position: center;
     background-size: contain;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-repeat: no-repeat; }
 
-  #nudge {
-    margin: 0 8%; }
+  #nav {
+    float: none;
+    width: fit-content;
+    margin: 0 auto; }
+    #nav a {
+      padding-top: 10px; }
 
-  #location {
-    margin: 34px 8%; }
-    #location p {
-      font-size: 11pt; }
-    #location #elsewhere {
-      font-size: 7pt; }
+  .small-center {
+    width: 90%; }
+    .small-center h1 {
+      font-size: 16pt;
+      font-weight: 400; }
+    .small-center h2 {
+      font-size: 13pt; }
 
-  .half {
-    width: 100%; }
+  ul.portfolio li {
+    width: 72px;
+    height: 151px;
+    background-size: 72px 151px; }
 
-  #contents {
-    margin-left: 8%;
-    margin-right: 8%; }
+  ul.portfolio li a {
+    max-width: 48px; }
 
-  .content-item {
-    padding: 0; }
-
-  .supporting-item ul#faces {
-    text-align: left; } }
-@media (max-width: 540px) {
-  #logo {
-    width: 242px;
-    height: 48px;
-    top: 26px; }
-
-  #nudge {
-    background-position: 38px 0; }
-
-  #location {
-    display: none; }
-
-  .content-item h1 {
-    font-size: 20pt; }
-  .content-item li {
-    font-size: 12pt; }
-  .content-item p {
-    font-size: 12pt; } }
+  .narrow {
+    font-size: 10pt; } }
 
 /*# sourceMappingURL=css.css.map */
